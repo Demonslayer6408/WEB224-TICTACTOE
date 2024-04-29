@@ -1,0 +1,128 @@
+*{
+    color: #AA336A;
+    font-family: sans-serif;
+    transition: 0.3s ease-in-out;
+    user-select: none;
+}
+
+body{
+    /* background-image: url(zero_two.jpg); */
+    background-color: #1e1e1e;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+#welcome-message {
+    display: block; 
+    margin-top: 100px; 
+    font-size: larger;
+}
+
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 170px;
+    height: 80px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+.container h3{
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 30px;
+}
+
+.container .nextturnAlign{
+    border: 3px solid #AA336A;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.container .nextturnAlign:nth-child(even){
+    border-right: none;
+}
+
+.bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+    height: 40px;
+    background-color: pink;
+    z-index: -1;
+}
+
+.grid{
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 300px;
+    width: 300px;
+    margin: 30px auto;
+    border: 2px solid #AA336A;
+}
+
+.boxAlign{
+    font-size: 35px;
+    font-weight: 700;
+    border: 2px solid #AA336A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxAlign:hover{
+    background-color: pink;
+}
+
+#start-btn{
+    background-color: transparent;
+    padding: 8px 16px;
+    border-color: #000;
+    font-size: 32px;
+    border-radius: 10px;
+    margin: 0 auto;
+    height: 100px;
+}
+#start-btn:hover {
+    background-color: #FFB6D9;
+}
+
+.again {
+    background-color: transparent;
+    padding: 8px 16px;
+    border-color: #000;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: none;
+}
+
+.again:hover {
+    background-color: #FFB6D9;
+}
+
+.mode-btn{
+    background-color: transparent;
+    padding: 8px 16px;
+    border-color: #000;
+    font-size: 25px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.mode-btn:hover{
+    background-color: #FFB6D9;
+}
